@@ -1,0 +1,40 @@
+# config.yml - Example configuration file
+
+# General settings
+app_name: MyApp
+version: 1.0.0
+enabled: true
+debug: false
+
+# Database settings
+database:
+  host: localhost
+  port: 5432
+  username: myuser
+  password: mypassword
+  db_name: mydatabase
+
+# API settings
+api:
+  base_url: "https://api.example.com"
+  timeout: 30  # seconds
+  retries: 3
+
+# Logging settings
+logging:
+  level: INFO
+  log_file: /var/log/myapp.log
+  max_size: 50MB
+  rotate: true
+
+# Feature flags
+features:
+  authentication: true
+  notifications: false
+  dark_mode: true
+
+# Server settings
+server:
+  host: "0.0.0.0"
+  port: 8080
+  ssl_enabled: false
